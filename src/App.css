@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-height: 160px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +16,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,15 @@
 .App-link {
   color: #61dafb;
 }
+.listStyle{
+  background-color: #282c34 !important;
+  color: white !important;
+  text-align: left
+}
+.lists{
+  display: flex;
+  justify-content: center;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +44,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+.button{
+  width: fit-content;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.upload{
+  opacity: 0; 
+  position: absolute; 
+  margin-left: -6%; 
+  width: 30px
+}
+
+.images{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.imageSpan{
+  margin: 12% 10% 0px 0px;
+  height: 40vmin;
+  max-height: 160px;
+}
+
+.tetrisImage{
+  height: 40vmin; 
+  max-height: 160px;
 }
